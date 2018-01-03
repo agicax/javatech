@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/first_name"
+        android:hint="@string/first_name"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/last_name"
+        android:hint="@string/last_name"
+        android:layout_below="@id/first_name"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/profil_email"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/last_name"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/profil_tel"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:layout_below="@id/profil_email"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/profil_password"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/profil_tel"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/profil_cpassword"
+        android:hint="@string/Confirmpassword"
+        android:inputType="textPassword"
+        android:layout_below="@id/profil_password"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="@string/save"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>
